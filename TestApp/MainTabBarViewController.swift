@@ -13,10 +13,12 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .gray
         
+        //Устанавливаем цвет для таббара
+        tabBar.tintColor = .systemPink
         
         viewControllers = [
             generateViewController(viewController: SearchTableViewController(), imageName: "searchSmall", title: "Search",largeTitle: true),
-            generateViewController(viewController: ViewController(), imageName: "library", title: "Library",largeTitle: false)
+            generateViewController(viewController: ViewController(), imageName: "library", title: "Library",largeTitle: true)
         ]
         
     }
